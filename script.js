@@ -26,12 +26,27 @@ function play() {
 }
 function play2() {
 	if (document.getElementById("goon").value.toLowerCase() === "s") {
-		document.getElementById("gameVisualTxt").innerHTML = "you die of starvation.";
-		document.getElementById("gameVisualTxt2").innerHTML = "good run!";
+		document.getElementById("gameVisualTxt").innerHTML = "You put the food in your pocket and feel more hungry."
+		document.getElementById("gameVisualTxt2").innerHTML = "In the distance; there is a bear! fight, or run? (F/R)";
 	}
 	else if (document.getElementById("goon").value.toLowerCase() === "e") {
 		document.getElementById("gameVisualTxt").innerHTML = "You get rescued by a helicopter!";
 		document.getElementById("gameVisualTxt2").innerHTML = "Good game!";
+	}
+	else {
+		document.getElementById("gameVisualTxt").innerHTML = "Invalid input.";
+		document.getElementById("gameVisualTxt2").innerHTML = "";
+
+	}
+}
+function play3() {
+	if (document.getElementById("goon").value.toLowerCase() === "f") {
+		document.getElementById("gameVisualTxt").innerHTML = "Why would you try to fight a bear?"
+		document.getElementById("gameVisualTxt2").innerHTML = "You die, good run.";
+	}
+	else if (document.getElementById("goon").value.toLowerCase() === "e") {
+		document.getElementById("gameVisualTxt").innerHTML = "You sucsessfully outrun the bear, you are exhausted and hungry.";
+		document.getElementById("gameVisualTxt2").innerHTML = "After eating the food, you are rescued by a group of mountaineers.";
 	}
 	else {
 		document.getElementById("gameVisualTxt").innerHTML = "Invalid input.";
