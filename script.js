@@ -29,6 +29,7 @@ function play2() {
 		document.getElementById("gameVisualTxt").innerHTML = "You put the food in your pocket and feel more hungry."
 		document.getElementById("gameVisualTxt2").innerHTML = "In the distance; there is a bear! fight, or run? (F/R)";
 		document.getElementById("play3A").style.display = "block";
+		document.getElementById("Play2A").style.display = "none";
 	}
 	else if (document.getElementById("goon").value.toLowerCase() === "e") {
 		document.getElementById("gameVisualTxt").innerHTML = "You get rescued by a helicopter!";
@@ -45,7 +46,7 @@ function play3() {
 		document.getElementById("gameVisualTxt").innerHTML = "Why would you try to fight a bear?"
 		document.getElementById("gameVisualTxt2").innerHTML = "You die, good run.";
 	}
-	else if (document.getElementById("goon").value.toLowerCase() === "e") {
+	else if (document.getElementById("goon").value.toLowerCase() === "r") {
 		document.getElementById("gameVisualTxt").innerHTML = "You sucsessfully outrun the bear, you are exhausted and hungry.";
 		document.getElementById("gameVisualTxt2").innerHTML = "After eating the food, you are rescued by a group of mountaineers.";
 	}
