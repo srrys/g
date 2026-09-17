@@ -28,6 +28,7 @@ function play2() {
 	if (document.getElementById("goon").value.toLowerCase() === "s") {
 		document.getElementById("gameVisualTxt").innerHTML = "You put the food in your pocket and feel more hungry."
 		document.getElementById("gameVisualTxt2").innerHTML = "In the distance; there is a bear! fight, or run? (F/R)";
+		document.getElementById("play3A").style.display = "block";
 	}
 	else if (document.getElementById("goon").value.toLowerCase() === "e") {
 		document.getElementById("gameVisualTxt").innerHTML = "You get rescued by a helicopter!";
